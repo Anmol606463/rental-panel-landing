@@ -9,14 +9,14 @@ export const Navbar = ({ bannerVisible }: { bannerVisible: boolean }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-center h-24 relative">
           <div className="flex justify-between items-center w-full">
-            <div className="flex-shrink-0 flex items-center cursor-pointer space-x-3">
-              <img src="/logo.png" alt="Smart Rental Logo" className="w-10 h-10 object-contain rounded-md" />
-              <span className="text-2xl sm:text-3xl font-light tracking-[0.15em] text-white">
+            <div className="flex-shrink-0 flex items-center cursor-pointer space-x-2 sm:space-x-3 max-w-[75%]">
+              <img src="/logo.png" alt="Smart Rental Logo" className="w-8 h-8 sm:w-10 sm:h-10 object-contain rounded-md shrink-0" />
+              <span className="text-lg sm:text-2xl lg:text-3xl font-light tracking-[0.1em] sm:tracking-[0.15em] text-white truncate">
                 SMART RENTAL PANEL
               </span>
             </div>
 
-            <div className="hidden lg:flex items-center space-x-10 text-[15px] text-white">
+            <div className="hidden lg:flex items-center space-x-10 text-[15px] text-white shrink-0">
               {['Home', 'Features', 'Pricing', 'Demo', 'FAQ', 'Contact Us'].map((item) => (
                 <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-white/80 transition-colors font-normal">
                   {item}
@@ -27,9 +27,9 @@ export const Navbar = ({ bannerVisible }: { bannerVisible: boolean }) => {
               </a>
             </div>
 
-            <div className="md:hidden flex items-center pt-2">
-              <button onClick={() => setIsOpen(!isOpen)} className="text-white">
-                {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
+            <div className="lg:hidden flex items-center pt-2 shrink-0">
+              <button onClick={() => setIsOpen(!isOpen)} className="text-white p-1">
+                {isOpen ? <X className="h-7 w-7 sm:h-8 sm:w-8" /> : <Menu className="h-7 w-7 sm:h-8 sm:w-8" />}
               </button>
             </div>
           </div>

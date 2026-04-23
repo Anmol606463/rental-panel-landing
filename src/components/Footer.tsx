@@ -18,14 +18,14 @@ export const Footer = () => {
 
   return (
     <>
-      <footer className="bg-white border-t border-gray-200 py-6">
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-[14px] text-gray-500">
-          <p className="mb-4 md:mb-0">
+      <footer className="bg-white border-t border-gray-200 py-8">
+        <div className="max-w-[85rem] mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-[14px] text-gray-500 gap-6">
+          <p className="text-center md:text-left">
             &copy; Copyright <strong className="font-bold text-gray-800">Smart Rental panel.</strong> All Rights Reserved
           </p>
-          <div className="flex flex-wrap justify-center space-x-6 text-[14px]">
+          <div className="flex flex-wrap justify-center gap-x-5 gap-y-3 text-[14px]">
             {['Home', 'Features', 'Pricing', 'FAQ', 'Terms of Service', 'Privacy Policy', 'Contact Us'].map((link) => (
-              <a key={link} href={`#${link.toLowerCase().replace(/ /g, '-')}`} className="hover:text-teal-500 transition-colors">
+              <a key={link} href={`#${link.toLowerCase().replace(/ /g, '-')}`} className="hover:text-teal-500 transition-colors whitespace-nowrap">
                 {link}
               </a>
             ))}
