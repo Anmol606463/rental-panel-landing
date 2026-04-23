@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { AnnouncementBanner } from './components/AnnouncementBanner';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -10,9 +10,21 @@ import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { Login } from './components/Login';
 
 const App = () => {
   const [bannerVisible, setBannerVisible] = useState(true);
+  const [currentPath, setCurrentPath] = useState(window.location.hash);
+
+  useEffect(() => {
+    const handleHashChange = () => setCurrentPath(window.location.hash);
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  if (currentPath === '#login') {
+    return <Login />;
+  }
 
   return (
     <div className="min-h-screen font-sans selection:bg-teal-200 selection:text-teal-900 bg-slate-50 text-slate-900">
