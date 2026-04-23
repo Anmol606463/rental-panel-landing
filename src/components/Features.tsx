@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Users, CreditCard, ShoppingCart, Sliders, Link2, Monitor, Target, Edit, Package } from 'lucide-react';
 
 export const Features = () => {

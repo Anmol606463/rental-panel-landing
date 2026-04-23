@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { X } from 'lucide-react';
 
 export const AnnouncementBanner = ({ onClose }: { onClose: () => void }) => {

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Droplet, Server, Globe2, BarChart2 } from 'lucide-react';
 
 export const Security = () => {
