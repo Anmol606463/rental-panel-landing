@@ -8,7 +8,7 @@ export const Login = () => {
       <div className="absolute top-8 left-8">
         <a href="#" className="flex items-center space-x-2 text-[#1ce1c2] hover:text-teal-600 transition-colors">
           <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain opacity-90" />
-          <span className="text-xl font-light tracking-[0.15em]">BUYRENTAL</span>
+          <span className="text-xl font-light tracking-[0.15em]">SMART RENTAL</span>
         </a>
       </div>
 

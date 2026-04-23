@@ -21,7 +21,7 @@ export const Footer = () => {
       <footer className="bg-white border-t border-gray-200 py-6">
         <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-[14px] text-gray-500">
           <p className="mb-4 md:mb-0">
-            &copy; Copyright <strong className="font-bold text-gray-800">BuyRental panel.</strong> All Rights Reserved
+            &copy; Copyright <strong className="font-bold text-gray-800">Smart Rental panel.</strong> All Rights Reserved
           </p>
           <div className="flex flex-wrap justify-center space-x-6 text-[14px]">
             {['Home', 'Features', 'Pricing', 'FAQ', 'Terms of Service', 'Privacy Policy', 'Contact Us'].map((link) => (

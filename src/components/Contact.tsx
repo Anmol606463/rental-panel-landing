@@ -55,8 +55,8 @@ export const Contact = () => {
           {/* Brand & Socials (Col 1) */}
           <div className="md:col-span-4 flex flex-col space-y-5">
              <div className="flex items-center space-x-3 mb-1">
-               <img src="/logo.png" alt="BuyRental Logo" className="w-9 h-9 object-contain opacity-90" />
-               <h2 className="text-2xl md:text-3xl font-light tracking-[0.15em] text-[#1ce1c2]">BUYRENTAL PANEL</h2>
+               <img src="/logo.png" alt="Smart Rental Logo" className="w-9 h-9 object-contain opacity-90" />
+               <h2 className="text-2xl md:text-3xl font-light tracking-[0.15em] text-[#1ce1c2]">SMART RENTAL PANEL</h2>
              </div>
              <p className="text-gray-400 font-light text-[15px] leading-relaxed">
                We are providing the best SMM panel in the world.

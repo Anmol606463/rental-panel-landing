@@ -10,9 +10,9 @@ export const Navbar = ({ bannerVisible }: { bannerVisible: boolean }) => {
         <div className="flex flex-col justify-center h-24 relative">
           <div className="flex justify-between items-center w-full">
             <div className="flex-shrink-0 flex items-center cursor-pointer space-x-3">
-              <img src="/logo.png" alt="BuyRental Logo" className="w-10 h-10 object-contain rounded-md" />
+              <img src="/logo.png" alt="Smart Rental Logo" className="w-10 h-10 object-contain rounded-md" />
               <span className="text-2xl sm:text-3xl font-light tracking-[0.15em] text-white">
-                BUYRENTAL PANEL
+                SMART RENTAL PANEL
               </span>
             </div>
 
